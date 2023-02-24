@@ -34,7 +34,7 @@ export const CalculatorScreen = () => {
         <BtnCalc text="C" bgColor="#9B9B9B" action={cleanBtn} />
         <BtnCalc text="+/-" bgColor="#9B9B9B" action={toggleNegativeBtn} />
         <BtnCalc text="del" bgColor="#9B9B9B" action={deleteBtn} />
-        <BtnCalc text="/" bgColor="#FF9427" action={divideBtn} />
+        <BtnCalc text="/" bgColor="#5856D6" action={divideBtn} />
       </View>
 
       {/* Button Row */}
@@ -43,7 +43,7 @@ export const CalculatorScreen = () => {
         <BtnCalc text="7" action={buildNumber} />
         <BtnCalc text="8" action={buildNumber} />
         <BtnCalc text="9" action={buildNumber} />
-        <BtnCalc text="x" bgColor="#FF9427" action={multiplyBtn} />
+        <BtnCalc text="x" bgColor="#5856D6" action={multiplyBtn} />
       </View>
 
       {/* Button Row */}
@@ -52,7 +52,7 @@ export const CalculatorScreen = () => {
         <BtnCalc text="4" action={buildNumber} />
         <BtnCalc text="5" action={buildNumber} />
         <BtnCalc text="6" action={buildNumber} />
-        <BtnCalc text="-" bgColor="#FF9427" action={subtractBtn} />
+        <BtnCalc text="-" bgColor="#5856D6" action={subtractBtn} />
       </View>
 
       {/* Button Row */}
@@ -61,7 +61,7 @@ export const CalculatorScreen = () => {
         <BtnCalc text="1" action={buildNumber} />
         <BtnCalc text="2" action={buildNumber} />
         <BtnCalc text="3" action={buildNumber} />
-        <BtnCalc text="+" bgColor="#FF9427" action={addBtn} />
+        <BtnCalc text="+" bgColor="#5856D6" action={addBtn} />
       </View>
 
       {/* Button Row */}
@@ -69,7 +69,7 @@ export const CalculatorScreen = () => {
         {/* Buttons */}
         <BtnCalc text="0" btnWidth action={buildNumber} />
         <BtnCalc text="." action={buildNumber} />
-        <BtnCalc text="=" bgColor="#FF9427" action={calculateBtn} />
+        <BtnCalc text="=" bgColor="#5856D6" action={calculateBtn} />
       </View>
     </View>
   );
