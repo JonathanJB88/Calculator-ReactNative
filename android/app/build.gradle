@@ -1,6 +1,10 @@
 apply plugin: "com.android.application"
 apply plugin: "com.facebook.react"
+project.ext.vectoricons = [
+    iconFontNames: [ 'Ionicons.ttf' ] // Name of the font files you want to copy
+]
 
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
 import com.android.build.OutputFile
 
 /**
@@ -93,9 +97,9 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.calculator"
+    namespace "com.jonathanbracho.calculatorrn"
     defaultConfig {
-        applicationId "com.calculator"
+        applicationId "com.jonathanbracho.calculatorrn"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

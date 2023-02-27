@@ -43,7 +43,7 @@ export const styles = StyleSheet.create({
     textAlign: 'center',
     padding: 10,
     fontSize: 30,
-    color: 'white',
     fontWeight: '400',
+    color: 'white',
   },
 });

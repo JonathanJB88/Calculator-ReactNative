@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 import { styles } from '../theme/appTheme';
 
@@ -24,13 +25,23 @@ export const BtnCalc = ({
           backgroundColor: bgColor,
           width: btnWidth ? 180 : 80,
         }}>
-        <Text
-          style={{
-            ...styles.btnText,
-            color: bgColor === '#9B9B9B' ? 'black' : 'white',
-          }}>
-          {text}
-        </Text>
+        {text === 'backspace-outline' ? (
+          <Icon
+            name={text}
+            style={{
+              ...styles.btnText,
+              color: bgColor === '#9B9B9B' ? 'black' : 'white',
+            }}
+          />
+        ) : (
+          <Text
+            style={{
+              ...styles.btnText,
+              color: bgColor === '#9B9B9B' ? 'black' : 'white',
+            }}>
+            {text}
+          </Text>
+        )}
       </View>
     </TouchableOpacity>
   );

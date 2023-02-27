@@ -38,8 +38,12 @@ export const CalculatorScreen = () => {
       <View style={styles.btnRow}>
         {/* Buttons */}
         <BtnCalc text="C" bgColor="#9B9B9B" action={cleanBtn} />
+        <BtnCalc
+          text="backspace-outline"
+          bgColor="#9B9B9B"
+          action={deleteBtn}
+        />
         <BtnCalc text="+/-" bgColor="#9B9B9B" action={toggleNegativeBtn} />
-        <BtnCalc text="del" bgColor="#9B9B9B" action={deleteBtn} />
         <BtnCalc text="/" bgColor="#5856D6" action={divideBtn} />
       </View>
 

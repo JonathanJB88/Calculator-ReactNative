@@ -1,4 +1,4 @@
-package com.calculator;
+package com.jonathanbracho.calculatorrn;
 import org.devio.rn.splashscreen.SplashScreenReactPackage;
 import android.app.Application;
 import com.facebook.react.PackageList;
